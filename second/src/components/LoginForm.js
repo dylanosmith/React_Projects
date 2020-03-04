@@ -16,7 +16,7 @@ class LoginForm extends Component {
                     <label htmlFor="birthday">Birthday:</label>
                     <input type="date" name="name" id="birthday"/>
                 </div>
-                <button class = "btn btn-primary" type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         );
     }

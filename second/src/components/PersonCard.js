@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class PersonCard extends Component {
     constructor(props){
         super(props);

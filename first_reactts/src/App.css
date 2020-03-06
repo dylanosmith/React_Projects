@@ -17,6 +17,9 @@
   box-shadow: 5px 5px 5px black;
 
 }
+.validations {
+  color: red;
+}
 
 .wrapper {
   padding: 10px;

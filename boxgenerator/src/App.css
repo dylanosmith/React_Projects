@@ -16,6 +16,42 @@
   }
 }
 
+.box-form {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#box-area {
+  margin: 10px auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group >label {
+  font-size: x-large;
+  margin-right: 10px;
+}
+.form-group > input {
+  border-radius: 5px;
+  height: 25px;
+  width: 300px;
+}
+
+form > button {
+  background :palevioletred;
+  color: black;
+  font-size: 12px;
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
 .App-header {
   background-color: #282c34;
   height: 10vh;
@@ -26,6 +62,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;

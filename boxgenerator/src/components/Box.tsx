@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-interface boxProps {
+interface BoxProps {
     color: string;
     width: number;
     height: number;
 }
-const Box : React.FC<boxProps> = props => {
+const Box : React.FC<BoxProps> = props => {
     return (
         <div style = {{
             backgroundColor: props.color,

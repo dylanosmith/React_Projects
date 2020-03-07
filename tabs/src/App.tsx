@@ -2,15 +2,27 @@ import React, {useState} from 'react';
 import './App.css';
 import Tabs from './components/Tabs';
 
+export interface TabProps {
+  tabName:string;
+  tabContent: string;
+  isTabSelected:boolean;
+}
+
 function App() {
-  const [tabs, setTabs] = useState<string[]>(["Tab1", "Tab2", "Tab3"])
-  //tabs is now equal to string[] and values "Tab1", "Tab2" and "Tab3"
+  const [tabState, setTabState] = useState<TabProps[]>([
+    {tabName: "Tab1", tabContent:"Content for Tab1", isTabSelected: true},
+    {tabName: "Tab2", tabContent:"Content for Tab2", isTabSelected: false},
+    {tabName: "Tab3", tabContent:"Content for Tab3", isTabSelected: false}
+
+  ])
+
   return (
     <div className="App">
-      
-      <Tabs />
-      
-    
+      <div id="tab_bar">
+        {tabState.map((tab, i)=> (
+            <Tabs key={i} tabState={tab.tabState} setTabState = {setTabState} />
+          ))}
+      </div>
     </div>
   );
 }

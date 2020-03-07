@@ -13,6 +13,20 @@
   }
 }
 
+#tab_bar {
+  display: flex;
+  flex-direction: row;
+
+}
+#content {
+  border: 1px solid black;
+  width: 606px;
+  height: 300px;
+  margin-top: 5px;
+  margin-left: 2px;
+
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

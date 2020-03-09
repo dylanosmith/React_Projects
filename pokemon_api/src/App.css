@@ -12,10 +12,24 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#PokeList{
+  list-style-type: disc;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+} 
+
+.get-poke{
+  height: 30px;
+  background-color:darkmagenta;
+  color: white;
+  font-size: larger;
+  border-radius: 5px;
+}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;

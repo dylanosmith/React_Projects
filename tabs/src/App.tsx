@@ -1,27 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Tabs from './components/Tabs';
+import Tab from './components/Tab';
 
-export interface TabProps {
-  tabName:string;
-  tabContent: string;
-  isTabSelected:boolean;
-}
 
 function App() {
-  const [tabState, setTabState] = useState<TabProps[]>([
-    {tabName: "Tab1", tabContent:"Content for Tab1", isTabSelected: true},
-    {tabName: "Tab2", tabContent:"Content for Tab2", isTabSelected: false},
-    {tabName: "Tab3", tabContent:"Content for Tab3", isTabSelected: false}
-
-  ])
-
   return (
     <div className="App">
       <div id="tab_bar">
-        {tabState.map((tab, i)=> (
-            <Tabs key={i} tabState={tab.tabState} setTabState = {setTabState} />
-          ))}
+        <Tab 
+          index={1} label = {"Tab1"} content = {"In a while crocodile"} isSelected ={true}>
+        </Tab>
+        <Tab 
+          index ={2} label = {"Tab2"} content = {"Take a break bro!"} isSelected = {false}>
+        </Tab>
+        <Tab index ={3} label = {"Tab3"} content = {"So freaking cool!"} isSelected = {false}/>
       </div>
     </div>
   );

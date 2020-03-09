@@ -1,0 +1,10 @@
+.complete {
+    text-decoration: line-through;
+}
+
+.delete {
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+}

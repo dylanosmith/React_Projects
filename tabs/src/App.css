@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+.selected {
+  background-color:hotpink ;
+  height: 40px;
+  width: 60px;
+}
+
+.notSelected {
+  background-color:yellow;
+  height: 40px;
+  width: 60px;
+}
+
+.display {
+  border: 2px solid purple;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 20px; 
+  font-family: cursive;
+  font-size: xx-large;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

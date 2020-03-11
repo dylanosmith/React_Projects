@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react';
+import { NavContext } from './NavContext';
 
 const Navbar = () => {
-    return (
-        <div className="Nav">
-            <h4>Hi Name Goes Here</h4>
-        </div>
-    )
-}
+    const [user] = useContext(NavContext);
+        return(
+            <div>
+                <h1>Hi {user.name} </h1>
+            </div>
 
-export default Navbar
+        );
+}
+export default Navbar;

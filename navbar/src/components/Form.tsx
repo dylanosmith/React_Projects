@@ -1,12 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { NavContext } from './NavContext';
 
-const Form:React.FC = () => {
+const Form = () => {
+    const [user,setUser] = React.useContext(NavContext);
+    const onChangeHandler = (event:React.ChangeEvent<HTMLInputElement>)=> {
+        setUser({
+            ...user,
+            name:event.target.value
+        })
+    }
     return (
-        <form>
+        <div>
             <label>Your Name:</label>
-            <input type="text"/>
-        </form>
-    )
+            <input type="text" value={user.name} onChange = {onChangeHandler}/>
+        </div>
+    );
 }
 
-export default Form
+export default Form;

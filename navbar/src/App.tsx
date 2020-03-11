@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Wrapper from './components/Wrapper';
 import Navbar from './components/Navbar';
+import NavProvider from './components/NavContext';
 import FormWrapper from './components/FormWrapper';
 
 
 
 function App() {
-  const [name, setName] = useState("Bob");
   return (
-
-      <Wrapper>
-        <Navbar />
-        <FormWrapper />
-      </Wrapper>
+    <div className = "App">
+        <NavProvider>
+          <Navbar />
+          <FormWrapper />
+        </NavProvider>
+    </div>
   );
 }
 

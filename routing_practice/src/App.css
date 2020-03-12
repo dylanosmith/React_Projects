@@ -34,6 +34,26 @@ a {
   text-decoration-color:darkmagenta;
   text-decoration-style: wavy;
 }
+.home {
+  margin: 0 10px;
+  background-color: #61dafb;
+  color: purple;
+}
+
+.four {
+  margin: 0 10px;
+  background-color: #49ba93;
+  color: purple;
+}
+.word {
+  margin: 0 10px;
+  background-color: #61dafb;
+  color: purple;
+}
+
+.blue-red{
+  margin: 0 10px;
+}
 
 .App-header {
   background-color: #282c34;
